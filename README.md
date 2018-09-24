@@ -59,13 +59,13 @@ To install Zalenium and Selenium for Docker.
 
 3. Whilst this is running, you can observe the number of Selenium Grid containers being created (`http://{yourIp}:4444/grid/console`) as the tests are being run.
 
-    ![](images/live.png)
+    ![](images/autoscale.png)
 
 4. Once the tests are finishing you can perform a refresh on the Console page to see the number of instances scale down.
 
 5. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and a video recording of these tests.
 
-![](images/live.png)
+    ![](images/dashboard.png)
 
 ## Closing Zalenium
 
