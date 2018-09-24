@@ -1,4 +1,5 @@
 # Auto-Scaling Selenium Grid with Docker and Zalenium
+![](images/zalenium.png)
 
 ## Accessing Your Machine
 
@@ -6,8 +7,10 @@ We will provide you with a machine IP address which is your Ubuntu VM for the du
 
 1. To access your machine first open a Terminal/Command window and enter the following command:
     `ssh @devops{yourIp}`
+
+2. You will be asked about whether you wish to proceed, type `yes` and press return.
     
-    The password for all machines is `playground`. 
+3. You will be prompted for a password. The password for all machines is `playground`. 
 
 ## What Have We Already Set Up?
 
@@ -37,26 +40,26 @@ To install Zalenium and Selenium for Docker.
 
     The above command runs Zalenium and exposes port 4444.  
     It allows Zalenium to create more Selenium Grid docker containers.  
-    It sets a local location for videos to be saved.  
+    It sets a local temporary location for videos to be saved.  
     Running it privileged is optional, but it does help to speed up the registration of containers.  
     & allows us to continue using the same terminal/command window.  
 
-2. In a few seconds, access http://{yourIp}:4444/grid/console in your browser on your local machine.
+2. In a few seconds, access http://localhost:4444/grid/admin/live in your browser on your local machine.
     You should see two Selenium Grid containers with one instance each of Firefox and Chrome. This is by default.
 
 ## Running Zalenium - Running a Selenium Test
 
 1. In your ssh terminal/command window, navigate to the JavaScript WebDriver.io repository
-` `
+`cd ********`
 
 2. To run the tests, enter the following command
 `./node_modules/.bin/wdio wdio.conf.js`
 
-Whilst this is running, observe the number of Selenium Grid containers being created (http://{yourIp}:4444/grid/console) as the tests are being run.
+3. Whilst this is running, you can observe the number of Selenium Grid containers being created (http://{yourIp}:4444/grid/console) as the tests are being run.
 
-Once the tests are finishing you can perform a refresh on the Console page to see the number of instances scale down.
+4. Once the tests are finishing you can perform a refresh on the Console page to see the number of instances scale down.
 
-You can also view recorded videos by accessing http://{yourIp}:4444/dashboard. This provides you with a history of the tests which have been run and a video recording of these tests.
+5. You can also view recorded videos by accessing http://{yourIp}:4444/dashboard. This provides you with a history of the tests which have been run and a video recording of these tests.
 
 ## Closing Zalenium
 
