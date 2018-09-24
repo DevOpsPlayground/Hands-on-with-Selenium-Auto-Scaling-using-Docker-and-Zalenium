@@ -63,9 +63,11 @@ To install Zalenium and Selenium for Docker.
 
 4. Once the tests are finishing you can perform a refresh on the Console page to see the number of instances scale down.
 
-5. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and a video recording of these tests.
+5. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and their status.
 
     ![](images/dashboard.png)
+
+6. To view logs for each test, click on the instance from the left hand menu. From there you can view a video recording of the test as well as Selenium and Browser log information.
 
 ## Closing Zalenium
 
