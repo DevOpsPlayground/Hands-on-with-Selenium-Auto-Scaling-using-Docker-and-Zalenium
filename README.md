@@ -35,10 +35,10 @@ To install Zalenium and Selenium for Docker.
      --privileged dosel/zalenium start
      ```
 
-The above command runs Zalenium and exposes port 4444. 
-It allows Zalenium to create more Selenium Grid docker containers.
-It sets a local location for videos to be saved. 
-Running it privileged is optional, but it does help to speed up the registration of containers.
+    The above command runs Zalenium and exposes port 4444. 
+    It allows Zalenium to create more Selenium Grid docker containers.
+    It sets a local location for videos to be saved. 
+    Running it privileged is optional, but it does help to speed up the registration of containers.
 
 2. In a few seconds, access http://{yourIp}:4444/grid/console in your browser on your local machine.
     You should see two docker-selenium containers with one instance each of Firefox and Chrome. This is by default.
