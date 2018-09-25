@@ -16,7 +16,8 @@ We will provide you with a machine IP address which is your Ubuntu Virtual Machi
 
 - Docker - https://docs.docker.com/
 - NodeJs - https://nodejs.org/en
-- Selenium WebDriver Test Suite - https://github.com/ecsdigital/devopsplayground-edi-8-zalenium 
+- NPM - https://www.npmjs.com/ 
+- WebDriver IO JavaScript Test Suite - https://github.com/ecsdigital/devopsplayground-edi-8-zalenium 
 
 ## Installing Zalenium and Docker-Selenium
 
@@ -52,23 +53,29 @@ To install Zalenium and Selenium for Docker.
 
 ## Running Zalenium - Running a Selenium Test
 
-1. In your ssh terminal/command window, navigate to the JavaScript WebDriver.io repository
-`cd ********`
+1. You first want to create a directory for the Playground repository to be pulled into. Enter the following command into your ssh session:
+`mkdir myProject`
 
-2. To run the tests, enter the following command
+2. Change directory to your `myProject` folder:
+`cd myProject`
+
+3. We now want to clone the DevOps Playground repository into our new folder. Perform the following:
+`git clone https://github.com/ecsdigital/devopsplayground-edi-8-zalenium.git`
+
+4. To run the tests, enter the following command
 `./node_modules/.bin/wdio wdio.conf.js`
 
-3. Whilst this is running, you can observe the number of Selenium Grid containers being created (`http://{yourIP}:4444/grid/admin/live?refresh=15`) as the tests are being run.
+5. Whilst this is running, you can observe the number of Selenium Grid containers being created (`http://{yourIP}:4444/grid/admin/live?refresh=15`) as the tests are being run.
 
     ![](images/liveTest.png)
 
-4. Once the tests are finishing you can observe, on the same page, the number of instances scale down.
+6. Once the tests are finishing you can observe, on the same page, the number of instances scale down.
 
-5. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and their status.
+7. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and their status.
 
     ![](images/dashboard.png)
 
-6. To view logs for each test, click on the instance from the left hand menu. From there you can view a video recording of the test as well as Selenium and Browser log information.
+8. To view logs for each test, click on the instance from the left hand menu. From there you can view a video recording of the test as well as Selenium and Browser log information.
 
 ## Closing Zalenium
 
