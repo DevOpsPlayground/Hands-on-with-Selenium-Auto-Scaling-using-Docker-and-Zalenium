@@ -44,7 +44,10 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 20,
         //
-        browserName: 'chrome'
+        browserName: 'chrome',
+        chromeOptions: {
+            args: ['--disable-dev-shm-usage', '--no-sandbox']
+        }
     }],
     //
     // ===================
