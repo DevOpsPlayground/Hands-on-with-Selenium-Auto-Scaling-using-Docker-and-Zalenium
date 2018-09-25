@@ -53,14 +53,17 @@ To install Zalenium and Selenium for Docker.
 
 ## Running Zalenium - Running a Selenium Test
 
-1. You first want to create a directory for the Playground repository to be pulled into. Enter the following command into your ssh session:
+1. You first want to create a directory for the Playground repository to be pulled into. Enter the following command into your ssh session:  
 `mkdir myProject`
 
-2. Change directory to your `myProject` folder:
+2. Change directory to your `myProject` folder:  
 `cd myProject`
 
 3. We now want to clone the DevOps Playground repository into our new folder. Perform the following:
 `git clone https://github.com/ecsdigital/devopsplayground-edi-8-zalenium.git`
+
+4. You now want to change directory into the devopsplayground repository you just cloned.  
+`cd devopsplayground-edi-8-zalenium`
 
 4. To run the tests, enter the following command
 `./node_modules/.bin/wdio wdio.conf.js`
