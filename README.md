@@ -34,7 +34,7 @@ To install Zalenium and Selenium for Docker.
 1. In your ssh terminal/command window enter the following:
 
      ```
-     docker run --rm -ti --name zalenium -p 4444:4444 \
+     docker run --rm -ti --name zalenium -p -d 4444:4444 \
      -v /var/run/docker.sock:/var/run/docker.sock \
      -v /tmp/videos:/home/seluser/videos \
      --privileged dosel/zalenium start --maxDockerSeleniumContainers 4
