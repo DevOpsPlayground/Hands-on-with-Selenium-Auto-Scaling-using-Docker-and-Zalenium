@@ -68,7 +68,7 @@ To install Zalenium and Selenium for Docker.
 4. To run the tests, enter the following command
 `./node_modules/.bin/wdio wdio.conf.js`
 
-5. Whilst this is running, you can observe the number of Selenium Grid containers being created (http://yourIP:4444/grid/admin/live?refresh=15) as the tests are being run.
+5. Whilst this is running, you can observe the number of Selenium Grid containers being created at: http://yourIP:4444/grid/admin/live?refresh=15 as the tests are being run.
 
     ![](images/liveTest.png)
 
@@ -86,5 +86,5 @@ To install Zalenium and Selenium for Docker.
 
 `docker stop zalenium`
 
-To verify that this has closed correctly, access the Console page (http://yourIp:4444/grid/console). You should have a page not found error.
+To verify that this has closed correctly, access the Console page here: http://yourIp:4444/grid/console . You should have a page not found error.
 
