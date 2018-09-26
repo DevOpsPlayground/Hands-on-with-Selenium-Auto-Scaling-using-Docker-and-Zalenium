@@ -46,7 +46,7 @@ To install Zalenium and Selenium for Docker.
     Running it privileged is optional, but it does help to speed up the registration of containers.  
     & allows us to continue using the same terminal/command window.  
 
-2. In a few seconds, access `http://{yourIp}:4444/grid/admin/live?refresh=15` in your browser on your local machine.
+2. After a few seconds, in your browser on your local machine, access http://yourIp:4444/grid/admin/live?refresh=15.
     You should see two Selenium Grid containers with one instance each of Firefox and Chrome. This is by default.
 
     ![](images/live.png)
@@ -59,7 +59,7 @@ To install Zalenium and Selenium for Docker.
 2. Change directory to your 'myProject' folder:  
 `cd myProject`
 
-3. We now want to clone the DevOps Playground repository into our new folder. Perform the following:
+3. We now want to clone the DevOps Playground repository into our new folder within our ssh session. Perform the following:  
 `git clone https://github.com/ecsdigital/devopsplayground-edi-8-zalenium.git`
 
 4. You now want to change directory into the devopsplayground repository you just cloned.  
@@ -68,13 +68,13 @@ To install Zalenium and Selenium for Docker.
 4. To run the tests, enter the following command
 `./node_modules/.bin/wdio wdio.conf.js`
 
-5. Whilst this is running, you can observe the number of Selenium Grid containers being created (`http://{yourIP}:4444/grid/admin/live?refresh=15`) as the tests are being run.
+5. Whilst this is running, you can observe the number of Selenium Grid containers being created (http://yourIP:4444/grid/admin/live?refresh=15) as the tests are being run.
 
     ![](images/liveTest.png)
 
 6. Once the tests are finishing you can observe, on the same page, the number of instances scale down.
 
-7. You can also view recorded videos by accessing `http://{yourIp}:4444/dashboard`. This provides you with a history of the tests which have been run and their status.
+7. You can also view recorded videos by accessing http://yourIp:4444/dashboard. This provides you with a history of the tests which have been run and their status.
 
     ![](images/dashboard.png)
 
@@ -86,5 +86,5 @@ To install Zalenium and Selenium for Docker.
 
 `docker stop zalenium`
 
-To verify that this has closed correctly, access the Console page (`http://{yourIp}:4444/grid/console`). You should have a page not found error.
+To verify that this has closed correctly, access the Console page (http://yourIp:4444/grid/console). You should have a page not found error.
 
