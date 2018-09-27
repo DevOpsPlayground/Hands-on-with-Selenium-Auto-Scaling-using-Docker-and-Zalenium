@@ -17,7 +17,6 @@ We will provide you with a machine IP address which is your Ubuntu Virtual Machi
 - Docker - https://docs.docker.com/
 - NodeJs - https://nodejs.org/en
 - NPM - https://www.npmjs.com/ 
-- WebDriver IO JavaScript Test Suite - https://github.com/ecsdigital/devopsplayground-edi-8-zalenium 
 
 ## Installing Zalenium and Docker-Selenium
 
@@ -44,7 +43,6 @@ To install Zalenium and Selenium for Docker.
     It allows Zalenium to create more Selenium Grid docker containers.  
     It sets a local temporary location for videos to be saved.  
     Running it privileged is optional, but it does help to speed up the registration of containers.  
-    & allows us to continue using the same terminal/command window.  
 
 2. After a few seconds, in your browser on your local machine, access http://yourIp:4444/grid/admin/live?refresh=15.
     You should see two Selenium Grid containers with one instance each of Firefox and Chrome. This is by default.
