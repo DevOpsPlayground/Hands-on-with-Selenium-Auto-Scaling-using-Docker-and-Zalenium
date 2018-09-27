@@ -81,7 +81,6 @@ To install Zalenium and Selenium for Docker.
 ## Closing Zalenium
 
 1. Once your tests are finished you will probably want to shut down Zalenium. To do this enter the following command:
-
 `docker stop zalenium`
 
 To verify that this has closed correctly, access the Console page here: http://yourIp:4444/grid/console . You should have a page not found error.
