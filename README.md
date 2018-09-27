@@ -6,7 +6,7 @@
 We will provide you with a machine IP address which is your Ubuntu Virtual Machine (VM) for the duration of tonight's DevOps Playground.
 
 1. To access your machine first open a Terminal/Command window and enter the following command:
-    `ssh @devops{yourIp}`
+    `ssh devops@your.Ip`
 
 2. You will be asked about whether you wish to proceed, type `yes` and press return.
     
@@ -39,7 +39,7 @@ To install Zalenium and Selenium for Docker.
      --privileged dosel/zalenium start
      ```
 
-    The above command runs Zalenium and exposes port 4444.  
+    The above command runs Zalenium and points your tests towards port 4444.  
     It allows Zalenium to create more Selenium Grid docker containers.  
     It sets a local temporary location for videos to be saved.  
     Running it privileged is optional, but it does help to speed up the registration of containers.  
