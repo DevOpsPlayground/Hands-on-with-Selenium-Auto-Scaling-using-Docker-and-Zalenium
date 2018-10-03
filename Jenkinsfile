@@ -1,9 +1,8 @@
 #!groovy
 
-node{
+node('master') {
     stage('Checkout') {
         checkout scm
-        echo 'Repository checked out'
     }
 
     stage('Start Zalenium')
