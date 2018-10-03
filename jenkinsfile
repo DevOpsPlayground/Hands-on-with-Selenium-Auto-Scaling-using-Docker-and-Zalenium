@@ -1,4 +1,5 @@
 #!groovy
+
 node('master') {
     stage('Checkout') {
         echo 'Code checkout'
