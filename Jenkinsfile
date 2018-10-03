@@ -1,6 +1,10 @@
 #!groovy
 
-node('master') {
+pipeline {
+    agent{
+        docker { image 'node:7-alpine' }
+    }
+    stages {
 
         stage('Checkout') {
             checkout scm
@@ -13,5 +17,6 @@ node('master') {
                 -v /tmp/videos:/home/seluser/videos \
                 --privileged dosel/zalenium start'
             echo 'Zalenium running'
-        }
+        }    
+    }
 }
