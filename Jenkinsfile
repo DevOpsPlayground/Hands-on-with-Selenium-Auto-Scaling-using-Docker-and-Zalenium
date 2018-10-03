@@ -1,9 +1,9 @@
 #!groovy
 
 node('master') {
-    
+
     def dockerTool = tool name: 'docker', type: 'org.jenkinsci.plugins.docker.commons.tools.DockerTool'
-    withEnv(["DOCKER=${dockerTool}/bin"])
+    withEnv(["DOCKER=${dockerTool}/bin"]){
 
     stage('Checkout') {
         checkout scm
@@ -17,4 +17,5 @@ node('master') {
             --privileged dosel/zalenium start'
         echo 'Zalenium running'
     }
+}
 }
