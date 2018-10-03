@@ -1,6 +1,6 @@
 #!groovy
 
-node('master') {
+node{
     stage('Checkout') {
         checkout scm
         echo 'Repository checked out'
