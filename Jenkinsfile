@@ -4,10 +4,10 @@ node('master') {
     stage('Checkout') {
         checkout scm
         echo 'Repository checked out'
-    }
+    },
 
-    stage('Run Zalenium'){
-        dockerCmd 'sudo docker run --rm -ti --name zalenium -d -p 4444:4444 \
+    'Run Zalenium': {
+        dockerCmd 'run --rm -ti --name zalenium -d -p 4444:4444 \
             -v /var/run/docker.sock:/var/run/docker.sock \
             -v /tmp/videos:/home/seluser/videos \
             --privileged dosel/zalenium start'
