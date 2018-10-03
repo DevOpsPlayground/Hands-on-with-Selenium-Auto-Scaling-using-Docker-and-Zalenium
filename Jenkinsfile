@@ -1,6 +1,7 @@
 #!groovy
 
-pipeline {
+pipeline('master'){
+
     stages {
 
         stage('Checkout') {
