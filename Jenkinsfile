@@ -5,7 +5,6 @@ node('master') {
     agent {
         docker { image 'node:7-alpine' }
     }
-    stages {
         stage('Checkout') {
             checkout scm
             echo 'Repository checked out'
@@ -19,5 +18,4 @@ node('master') {
                 --privileged dosel/zalenium start'
             echo 'Zalenium running'
         }
-    }
 }
